@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+.calculator {
+  display: grid;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: aqua;
+  grid-template-areas:
+    "x x x x x x "
+    "z y y y y y "
+    "mc mr mmin mplus root ms "
+    "plusOrMin seven eight nine divide percentage"
+    "backspace four five six multiply subtract"
+    "ac one two three addition equal"
+    "c zero zero point addition equal";
+}
+
+#con {
+  grid-area: z;
+  background-color: white;
+}
+#M {
+  background-color: white;
+  width: 20px;
+}
+#memory {
+  background-color: white;
+  margin-left: 0px;
+}
+button:hover {
+  background: #fff;
+}
+button {
+  background-color: rgb(248, 246, 246);
+  border-width: 0px;
+}
+#answer {
+  grid-area: x;
+  background-color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+#equation {
+  grid-area: y;
+  background-color: white;
+  font-size: 30px;
+  text-align: end;
+  padding-top: 48px;
+}
+html {
+  margin: 0;
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+#image {
+  background-image: url(./Images/pexels-lumn-167682.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#overlay {
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.87),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+#mc {
+  grid-area: mc;
+}
+#mr {
+  grid-area: mr;
+}
+#mmin {
+  grid-area: mmin;
+}
+#mplus {
+  grid-area: mplus;
+}
+#ms {
+  grid-area: ms;
+}
+#root {
+  grid-area: root;
+}
+
+#plusOrMin {
+  grid-area: plusOrMin;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#divide {
+  grid-area: divide;
+}
+#percentage {
+  grid-area: percentage;
+}
+
+#backspace {
+  grid-area: backspace;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#multiply {
+  grid-area: multiply;
+}
+#subtract {
+  grid-area: subtract;
+}
+
+#ac {
+  grid-area: ac;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+
+#addition {
+  grid-area: addition;
+}
+#equal {
+  grid-area: equal;
+}
+
+#c {
+  grid-area: c;
+}
+#zero {
+  grid-area: zero;
+}
+#point {
+  grid-area: point;
+}
